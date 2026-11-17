@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Growth plan — LaunchMate AI</title>
+<link rel="stylesheet" href="assets/launchmate.css">
+<style>
+  .title { font-size: clamp(32px, 4.2vw, 52px); letter-spacing: -0.035em; line-height: 1.02; }
+  .title em { font-size: 1.08em; color: var(--forest); }
+  .rec { border: 1.5px solid var(--ink); border-radius: var(--r); background: var(--white); position: relative; }
+  .rec + .rec { margin-top: 12px; }
+  .rec summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 34px 1fr auto; gap: 14px; padding: 16px 18px; align-items: start; }
+  .rec summary::-webkit-details-marker { display: none; }
+  .rec .n { font: 800 14px/1 var(--sans); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--lime); }
+  .rec h3 { font-size: 19px; letter-spacing: -0.02em; line-height: 1.22; }
+  .rec .meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; align-items: center; }
+  .rec .body { padding: 2px 22px 22px 66px; border-top: 1px dashed var(--line-2); margin: 0 0 0; padding-top: 18px; }
+  .rec[open] { box-shadow: 4px 4px 0 var(--ink); }
+  .pri { font: 800 11px/1 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 9px; border-radius: 3px; }
+  .pri-high { background: var(--lime); border: 1.5px solid var(--ink); }
+  .pri-medium { background: var(--sage); border: 1.5px solid var(--ink); }
+  .pri-low { background: var(--paper-2); border: 1.5px solid var(--line-2); color: var(--ink-2); }
+  .rec .done h3 { text-decoration: line-through; text-decoration-thickness: 1.5px; color: var(--ink-3); }
+  .sticky { position: sticky; top: 84px; }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-3); margin-top: 8px; }
+  .legend i { display: inline-block; width: 12px; height: 12px; border: 1.5px solid var(--ink); vertical-align: -2px; margin-right: 5px; }
+  .src-line { font-size: 12.5px; color: var(--ink-3); margin-top: 6px; }
+  .src-line code { font: 600 12px var(--sans); background: var(--paper-2); padding: 2px 6px; border-radius: 3px; color: var(--ink-2); }
+  .count { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1.5px solid var(--ink); }
+  .count div { padding: 12px 0 0; }
+  .count b { font-size: 32px; letter-spacing: -0.04em; display: block; line-height: 1; }
+  .count span { font-size: 12.5px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-flag">DESIGN PREVIEW · this plan was written by the product from a real audit and a sample profile</div>
+<header class="rail"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark"></span>LaunchMate</a>
+  <nav class="loop" aria-label="Growth loop">
+    <a class="is-done" href="audit.html"><b>✓</b>Diagnose</a><a class="is-now" href="plan.html"><b>2</b>Recommend</a><a href="studio.html"><b>3</b>Execute</a><a href="workspace-business.html"><b>4</b>Measure</a>
+  </nav>
+  <div class="rail-end"><span class="chip-profile"><i></i>Bare Botanics</span></div>
+</div></header>
+
+<main id="main" class="wrap" style="padding-top:44px; padding-bottom:60px">
+  <div class="row" style="margin-bottom:14px"><span class="chip chip-soft">Growth plan</span><span class="chip chip-soft">From the 14 Nov audit and 1 domain check</span></div>
+  <h1 class="title" style="max-width:21ch">Replace the placeholder first, then <em>fix the details.</em></h1>
+  <p class="lead" style="margin:18px 0 38px">Do first: replace the placeholder homepage with one that states what you make, who it's for, and lists the cleanser and moisturiser with a clear way to order. Then fix the title, heading and description.</p>
+
+  <div class="grid g-7-5" style="gap:48px; align-items:start">
+    <section aria-labelledby="r-h">
+      <div class="row spread" style="margin-bottom:16px"><h2 id="r-h" class="h3">7 recommendations, in order</h2><span class="small muted">Ranked by priority, then impact, then effort</span></div>
+
+      <details class="rec" open>
+        <summary><span class="n">1</span><div><h3>Add one heading that names your product and who it's for</h3><div class="meta"><span class="pri pri-high">High priority</span><span class="chip chip-soft">High impact</span><span class="chip chip-soft">Low effort</span><span class="src src-observed">Observed</span></div></div><div class="seg" role="group" aria-label="Status"><span class="on">Open</span><span>In progress</span><span>Done</span></div></summary>
+        <div class="body">
+          <div class="receipt-quote" style="margin-top:0"><span class="where">Evidence · AUDIT-2, AUDIT-C3</span><span class="quote"><span class="hl">SINGLE_H1: FAIL - no h1 heading was found</span></span></div>
+          <dl class="kv">
+            <dt>Why it matters</dt><dd>Without a main heading, neither visitors nor search engines get a clear statement of what the page offers.</dd>
+            <dt>First step</dt><dd>Add a single h1 built from your own description, for example wording that says plant-based skincare for sensitive skin. Keep it to one h1 and avoid claims you can't support.</dd>
+            <dt>How you'll know</dt><dd>Re-run the website audit and check that <b>SINGLE_H1</b> passes.</dd>
+          </dl>
+          <div class="row" style="margin-top:16px"><a class="btn btn-sm btn-primary" href="studio.html">Draft the wording</a><a class="btn btn-sm btn-quiet" href="#">Dismiss</a></div>
+        </div>
+      </details>
+
+      <details class="rec">
+        <summary><span class="n">2</span><div><h3>Replace the "Example Domain" title with a 30 to 60 character one</h3><div class="meta"><span class="pri pri-high">High priority</span><span class="chip chip-soft">High impact</span><span class="chip chip-soft">Low effort</span><span class="src src-observed">Observed</span></div></div><div class="seg"><span class="on">Open</span><span>In progress</span><span>Done</span></div></summary>
+        <div class="body"><div class="receipt-quote" style="margin-top:0"><span class="where">Evidence · AUDIT-3, AUDIT-C1</span><span class="quote"><span class="hl">TITLE_LENGTH: FAIL - the title is 14 characters</span></span></div><p class="small">Write a title with Bare Botanics and what you make. How you'll know: re-run the audit and check TITLE_LENGTH passes.</p></div>
+      </details>
+
+      <details class="rec">
+        <summary><span class="n">3</span><div><h3>Replace the placeholder homepage with a real page that lists your products</h3><div class="meta"><span class="pri pri-high">High priority</span><span class="chip chip-soft">High impact</span><span class="chip chip-soft">Medium effort</span><span class="src src-observed">Observed</span></div></div><div class="seg"><span class="on">Open</span><span>In progress</span><span>Done</span></div></summary>
+        <div class="body"><p class="src-line">Rests on <code>AUDIT-1</code> <code>OWNER-6</code> <code>OWNER-7</code> <code>OWNER-4</code></p></div>
+      </details>
+
+      <details class="rec">
+        <summary><span class="n">4</span><div><h3>Add a 70 to 160 character meta description</h3><div class="meta"><span class="pri pri-medium">Medium priority</span><span class="chip chip-soft">Medium impact</span><span class="chip chip-soft">Low effort</span><span class="src src-observed">Observed</span></div></div><div class="seg"><span class="on">Open</span><span>In progress</span><span>Done</span></div></summary>
+        <div class="body"><p class="src-line">Rests on <code>AUDIT-4</code> <code>AUDIT-C2</code></p></div>
+      </details>
+
+      <details class="rec">
+        <summary><span class="n">5</span><div><h3>Add simple navigation and a clear path to the product pages</h3><div class="meta"><span class="pri pri-medium">Medium priority</span><span class="chip chip-soft">Medium impact</span><span class="chip chip-soft">Medium effort</span><span class="src src-observed">Observed</span></div></div><div class="seg"><span>Open</span><span class="on">In progress</span><span>Done</span></div></summary>
+        <div class="body"><p class="src-line">Rests on <code>AUDIT-5</code> <code>OWNER-4</code></p></div>
+      </details>
+
+      <details class="rec">
+        <summary><span class="n">6</span><div><h3>Check and secure barebotanics.in, with a migration plan if you switch</h3><div class="meta"><span class="pri pri-medium">Medium priority</span><span class="chip chip-soft">Medium impact</span><span class="chip chip-soft">Medium effort</span><span class="src src-ai">AI-derived</span></div></div><div class="seg"><span class="on">Open</span><span>In progress</span><span>Done</span></div></summary>
+        <div class="body"><p class="src-line">Rests on <code>DOMAIN-1</code> <code>OWNER-8</code>. Price is indicative until you confirm at checkout.</p></div>
+      </details>
+
+      <details class="rec">
+        <summary><span class="n">7</span><div><h3>Fix link wording and add a main landmark when building the real page</h3><div class="meta"><span class="pri pri-low">Low priority</span><span class="chip chip-soft">Low impact</span><span class="chip chip-soft">Low effort</span><span class="src src-observed">Observed</span></div></div><div class="seg"><span class="on">Open</span><span>In progress</span><span>Done</span></div></summary>
+        <div class="body"><p class="src-line">Rests on <code>AUDIT-6</code> <code>AUDIT-PSI</code></p></div>
+      </details>
+    </section>
+
+    <aside class="stack sticky" aria-label="Opportunity map and progress">
+      <div class="panel">
+        <h2 class="h3">Opportunity map</h2>
+        <p class="small muted" style="margin:4px 0 10px">Where each change sits. The shading is the priority rule, so nothing here is an unexplained score.</p>
+        <svg class="map" viewBox="0 0 380 350" role="img" aria-labelledby="mt2 md2"><title id="mt2">Opportunity map</title><desc id="md2">Seven recommendations placed by impact and effort. Items 1 to 3 are in the shaded high-priority corner.</desc>
+          <g stroke="#17261C" stroke-width="1.5">
+            <rect x="56" y="14" width="100" height="96" fill="#C8F169"/><rect x="156" y="14" width="100" height="96" fill="#C8F169"/><rect x="256" y="14" width="100" height="96" fill="#DDE6D5"/>
+            <rect x="56" y="110" width="100" height="96" fill="#DDE6D5"/><rect x="156" y="110" width="100" height="96" fill="#DDE6D5"/><rect x="256" y="110" width="100" height="96" fill="#ECEBE0"/>
+            <rect x="56" y="206" width="100" height="96" fill="#ECEBE0"/><rect x="156" y="206" width="100" height="96" fill="#ECEBE0"/><rect x="256" y="206" width="100" height="96" fill="#ECEBE0"/>
+          </g>
+          <g font-size="10.5" font-weight="700" fill="#44564A" letter-spacing="1"><text x="64" y="102">DO FIRST</text><text x="164" y="102">HIGH</text><text x="264" y="102">MEDIUM</text><text x="64" y="198">MEDIUM</text><text x="164" y="198">MEDIUM</text><text x="264" y="198">LOW</text><text x="64" y="294">LOW</text><text x="164" y="294">LOW</text><text x="264" y="294">LOW</text></g>
+          <g font-size="11" font-weight="700" fill="#17261C" text-anchor="end"><text x="48" y="66">HIGH</text><text x="48" y="162">MED</text><text x="48" y="258">LOW</text></g>
+          <g font-size="11" font-weight="700" fill="#17261C" text-anchor="middle"><text x="106" y="320">LOW</text><text x="206" y="320">MEDIUM</text><text x="306" y="320">HIGH</text><text x="206" y="341" letter-spacing="2" fill="#55675A">EFFORT →</text><text transform="translate(12 158) rotate(-90)" letter-spacing="2" fill="#55675A">IMPACT →</text></g>
+          <g fill="#17261C"><circle cx="84" cy="42" r="13"/><circle cx="128" cy="78" r="13"/><circle cx="206" cy="62" r="13"/><circle cx="106" cy="158" r="13"/><circle cx="180" cy="140" r="13"/><circle cx="232" cy="178" r="13"/><circle cx="106" cy="254" r="13"/></g>
+          <g fill="#C8F169" font-size="12" font-weight="800" text-anchor="middle"><text x="84" y="46">1</text><text x="128" y="82">2</text><text x="206" y="66">3</text><text x="106" y="162">4</text><text x="180" y="144">5</text><text x="232" y="182">6</text><text x="106" y="258">7</text></g>
+        </svg>
+        <p class="legend"><span><i style="background:#C8F169"></i>High priority</span><span><i style="background:#DDE6D5"></i>Medium</span><span><i style="background:#ECEBE0"></i>Low</span></p>
+      </div>
+      <div class="panel panel-sage">
+        <h2 class="h3" style="margin-bottom:10px">Your progress</h2>
+        <div class="count"><div><b>5</b><span>Open</span></div><div><b>1</b><span>In progress</span></div><div><b>1</b><span>Done</span></div><div><b>0</b><span>Dismissed</span></div></div>
+        <p class="small" style="margin-top:14px">Generating a new plan later keeps what you've done. It won't repeat finished work unless your latest audit still shows the problem.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<nav class="mock-nav" aria-label="Mockup screens">
+  <a href="index.html">Landing</a><a href="start.html">Start</a><a href="workspace-business.html">Business</a><a href="workspace-creator.html">Creator</a><a href="workspace-new.html">New business</a><a href="audit.html">Audit</a><a class="on" href="plan.html">Plan</a><a href="studio.html">Studio</a>
+</nav>
+</body>
+</html>

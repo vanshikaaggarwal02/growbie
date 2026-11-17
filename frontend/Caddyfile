@@ -1,0 +1,26 @@
+# SITE_ADDRESS is the public name, for example growbie.in. Caddy requests and renews the certificate itself.
+{$SITE_ADDRESS} {
+	encode gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+
+	handle /api/* {
+		reverse_proxy backend:8080
+	}
+
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
+}
+
+# Send www to the main address.
+www.{$SITE_ADDRESS} {
+	redir https://{$SITE_ADDRESS}{uri} permanent
+}

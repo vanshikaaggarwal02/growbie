@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launch workspace — LaunchMate AI</title>
+<link rel="stylesheet" href="assets/launchmate.css">
+<style>
+  .title { font-size: clamp(32px, 4.4vw, 54px); letter-spacing: -0.035em; line-height: 1.02; max-width: 20ch; }
+  .title em { font-size: 1.08em; color: var(--forest); }
+  .launch li { display: grid; grid-template-columns: 30px 1fr auto; gap: 14px; padding: 16px 0; border-top: 1px solid var(--line); align-items: start; }
+  .launch li:first-child { border-top: 1.5px solid var(--ink); }
+  .launch .box { width: 26px; height: 26px; border: 1.5px solid var(--ink); border-radius: 5px; display: grid; place-items: center; font: 800 14px/1 var(--sans); background: var(--white); }
+  .launch .done .box { background: var(--ink); color: var(--lime); }
+  .launch .now .box { background: var(--lime); }
+  .launch h3 { font-size: 17.5px; letter-spacing: -0.015em; line-height: 1.25; }
+  .launch p { font-size: 14.5px; color: var(--ink-2); margin-top: 3px; }
+  .launch .from { font-size: 12.5px; color: var(--ink-3); margin-top: 6px; }
+  .launch .from code { font: 600 12px var(--sans); background: var(--paper-2); padding: 2px 6px; border-radius: 3px; }
+  .finder { display: grid; grid-template-columns: 1fr auto; gap: 12px; }
+  .input { width: 100%; font: 500 16px/1.3 var(--sans); padding: 13px 14px; border: 1.5px solid var(--ink); border-radius: var(--r); background: var(--white); color: var(--ink); }
+  td .d { font-weight: 800; font-size: 17px; letter-spacing: -0.02em; }
+  td .sub { display: block; font-size: 12.5px; color: var(--ink-3); }
+  .avail { display: inline-flex; align-items: center; gap: 7px; font-weight: 700; font-size: 14px; }
+  .avail i { width: 10px; height: 10px; border-radius: 50%; background: var(--low); display: inline-block; }
+  .avail.no { color: var(--ink-3); } .avail.no i { background: transparent; border: 1.5px solid var(--ink-3); }
+  .warn { margin-top: 6px; font-size: 13px; border: 1.5px solid var(--high); color: var(--high); border-radius: 4px; padding: 5px 8px; font-weight: 700; display: inline-block; background: var(--white); }
+  .names { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+  .name { padding: 16px 0; border-top: 1px solid var(--line); }
+  .name:nth-child(-n+2) { border-top: 1.5px solid var(--ink); }
+  .name h3 { font: 400 italic 30px/1 var(--serif); letter-spacing: 0; }
+  .name p { font-size: 14.5px; color: var(--ink-2); margin: 6px 0 8px; }
+  @media (max-width: 960px) { .names { grid-template-columns: 1fr; } .name:nth-child(2) { border-top: 1px solid var(--line); } .finder { grid-template-columns: 1fr; } }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-flag">DESIGN PREVIEW · pre-launch business · domain results are real GoDaddy answers from a test run</div>
+<header class="rail"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark"></span>LaunchMate</a>
+  <nav class="loop" aria-label="Growth loop">
+    <a class="is-done" href="workspace-new.html"><b>✓</b>Diagnose</a><a class="is-now" href="plan.html"><b>2</b>Recommend</a><a href="studio.html"><b>3</b>Execute</a><a href="#"><b>4</b>Measure</a>
+  </nav>
+  <div class="rail-end"><span class="chip-profile"><i></i>Bare Botanics</span></div>
+</div></header>
+
+<main id="main" class="wrap" style="padding-top:44px; padding-bottom:60px">
+  <div class="row" style="margin-bottom:14px"><span class="chip chip-soft">New business</span><span class="chip chip-soft">Not launched yet</span><span class="chip chip-soft">Goal: first online orders</span></div>
+  <h1 class="title">Two things stand between you and opening: <em>a domain and a homepage.</em></h1>
+  <p class="lead" style="margin:18px 0 44px">Your audience and products are clear. You have no website address yet, no domain chosen, and no draft homepage copy. Here is what is left, and where each step comes from.</p>
+
+  <div class="grid g-7-5" style="gap:56px; align-items:start">
+    <section aria-labelledby="launch-h">
+      <div class="row spread" style="margin-bottom:6px"><h2 id="launch-h" class="h3">Launch checklist</h2><span class="small muted"><b>2 of 6</b> done</span></div>
+      <ol class="launch">
+        <li class="done"><span class="box">✓</span><div><h3>Describe what you sell and who it's for</h3><p>Plant-based skincare for adults with sensitive skin: a face cleanser and a moisturiser.</p></div><span class="src src-user">You told us</span></li>
+        <li class="done"><span class="box">✓</span><div><h3>Set a goal and a market</h3><p>First online orders, in Bengaluru, India.</p></div><span class="src src-user">You told us</span></li>
+        <li class="now"><span class="box">3</span><div><h3>Choose and secure a domain</h3><p>Two good matches are available. Compare them below, then buy through GoDaddy.</p><p class="from">Because: <code>domain candidates checked: 2</code></p></div><span class="src src-observed">Observed</span></li>
+        <li><span class="box"> </span><div><h3>Publish a first homepage that says what you offer</h3><p>Draft wording in the content studio, then build the page yourself.</p><p class="from">Because: <code>draft homepage copy: none provided</code> <code>website address: none given</code></p><a class="btn btn-sm" style="margin-top:10px" href="studio.html">Draft homepage copy</a></div><span class="src src-observed">Observed</span></li>
+        <li><span class="box"> </span><div><h3>Set up a professional email address on your domain</h3><p>After you register the domain, create one address such as hello@ followed by your domain. LaunchMate never changes DNS for you.</p></div><span class="src src-ai">AI-derived</span></li>
+        <li><span class="box"> </span><div><h3>Decide the name</h3><p>Four name ideas are saved below. You haven't chosen one yet.</p><p class="from">Because: <code>brand name suggestions: 4 generated</code></p></div><span class="src src-observed">Observed</span></li>
+      </ol>
+    </section>
+
+    <aside class="stack" aria-label="Notes">
+      <div class="panel panel-dark">
+        <p class="eyebrow">Do this next</p>
+        <h2 style="font-size:24px; line-height:1.15; margin:10px 0 10px">Pick between barebotanics.in and barebotanics.com</h2>
+        <p style="color:#D5E3D6; font-size:15.5px">Both match your name exactly. One costs 12.99 USD a year. The other is a premium name with a one-time fee of 2,488.00 USD on top of its yearly price.</p>
+        <a class="btn btn-primary" style="margin-top:16px" href="#domains">Compare them</a>
+      </div>
+      <div class="callout"><b>You buy it yourself.</b> LaunchMate never purchases a domain or changes DNS. We check availability and link you to GoDaddy.</div>
+    </aside>
+  </div>
+
+  <section id="domains" style="margin-top:64px" aria-labelledby="dom-h">
+    <div class="row spread" style="margin-bottom:14px"><h2 id="dom-h" class="h2">Domain <em>finder.</em></h2><span class="small muted">Checked 14 Nov via GoDaddy · prices are indicative, confirm at checkout</span></div>
+    <div class="finder" style="margin-bottom:22px"><input class="input" aria-label="Domain names to check" value="barebotanics.in, barebotanics.com"><a class="btn btn-primary" href="#">Check availability</a></div>
+    <div class="scroll"><table>
+      <thead><tr><th>Domain</th><th>Fit with your name</th><th>Availability</th><th>Price</th><th></th></tr></thead>
+      <tbody>
+        <tr><td><span class="d">barebotanics.in</span><span class="sub">12 letters · no hyphens or digits</span></td><td>Exact match</td><td><span class="avail"><i></i>Available</span></td><td><b>12.99 USD</b> a year<span class="sub">renews at 12.99 USD</span></td><td><a class="btn btn-sm" href="#">Buy on GoDaddy →</a></td></tr>
+        <tr><td><span class="d">barebotanics.com</span><span class="sub">12 letters · no hyphens or digits</span></td><td>Exact match</td><td><span class="avail"><i></i>Available</span><br><span class="warn">Premium domain</span></td><td><b>22.99 USD</b> a year<span class="sub"><b>plus 2,488.00 USD one-time premium fee</b></span></td><td><a class="btn btn-sm" href="#">Buy on GoDaddy →</a></td></tr>
+        <tr><td><span class="d">softleaf.in</span><span class="sub">Suggested for the name "Softleaf"</span></td><td>Different name</td><td><span class="avail"><i></i>Available</span></td><td><b>12.99 USD</b> a year</td><td><a class="btn btn-sm" href="#">Buy on GoDaddy →</a></td></tr>
+        <tr><td><span class="d">verda.com</span><span class="sub">Suggested for the name "Verda"</span></td><td>Different name</td><td><span class="avail no"><i></i>Not available</span></td><td class="muted">—</td><td></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section style="margin-top:64px" aria-labelledby="names-h">
+    <div class="row spread" style="margin-bottom:14px"><h2 id="names-h" class="h2">Name <em>ideas.</em></h2><span class="src src-ai">AI-suggested</span></div>
+    <div class="names">
+      <div class="name"><h3>Softleaf</h3><p>Plant-based cleanser and moisturiser for sensitive skin.</p><span class="chip chip-soft">softleaf.in · available</span></div>
+      <div class="name"><h3>Stillskin</h3><p>Minimal, plant-based care for sensitive skin.</p><span class="chip chip-soft">stillskin.in · available</span></div>
+      <div class="name"><h3>Verda</h3><p>Gentle plant-based skincare, made simple.</p><span class="chip chip-soft">verdaskin.in · available</span></div>
+      <div class="name"><h3>Plainly</h3><p>Two simple skincare steps for sensitive skin.</p><span class="chip chip-soft">plainlyskin.com · available</span></div>
+    </div>
+    <p class="callout" style="margin-top:20px"><b>Not checked:</b> trademark and existing-brand conflicts. Search the trademark register before you commit to any name.</p>
+  </section>
+</main>
+
+<nav class="mock-nav" aria-label="Mockup screens">
+  <a href="index.html">Landing</a><a href="start.html">Start</a><a href="workspace-business.html">Business</a><a href="workspace-creator.html">Creator</a><a class="on" href="workspace-new.html">New business</a><a href="audit.html">Audit</a><a href="plan.html">Plan</a><a href="studio.html">Studio</a>
+</nav>
+</body>
+</html>

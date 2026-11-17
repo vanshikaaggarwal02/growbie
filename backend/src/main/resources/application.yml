@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: launchmate-backend
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  mail:
+    host: ${MAIL_HOST:smtpout.secureserver.net}
+    port: ${MAIL_PORT:465}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+
+launchmate:
+  public-url: ${PUBLIC_URL:http://localhost:5173}
+  mail:
+    enabled: ${MAIL_ENABLED:false}
+    from: ${MAIL_FROM:support@growbie.in}
+  jwt:
+    secret: ${JWT_SECRET}
+    ttl-hours: 24
+  godaddy:
+    base-url: https://api.godaddy.com
+    pat: ${GODADDY_PAT:}
+  pagespeed:
+    base-url: https://www.googleapis.com
+    api-key: ${PAGESPEED_API_KEY:}
+  youtube:
+    base-url: https://www.googleapis.com
+    api-key: ${YOUTUBE_API_KEY:}
+
+server:
+  port: 8080
+  forward-headers-strategy: ${FORWARD_HEADERS:none}
+  error:
+    include-message: never
+    include-stacktrace: never

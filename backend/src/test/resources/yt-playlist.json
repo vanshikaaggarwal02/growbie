@@ -1,0 +1,78 @@
+{
+ "kind": "youtube#playlistItemListResponse",
+ "nextPageToken": "EAAaHlBUOkNBZ2lFREZHUmtJM1JEWXdNekkwTTBZNU56Zw",
+ "items": [
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "mithtxv-tZwg_cDPyjy01eD_GRI",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnZMQWVna0dHV3JN",
+   "contentDetails": {
+    "videoId": "vLAegkGGWrM",
+    "videoPublishedAt": "2026-11-12T17:00:11Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "biC1kJ_2-Z8ZKFP1NziXMXUkZAE",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnJzT2laRTE5UlZv",
+   "contentDetails": {
+    "videoId": "rsOiZE19RVo",
+    "videoPublishedAt": "2026-10-29T20:00:20Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "Cizv5bxTWuJM3O4aRCm-JNZbbBs",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LmN2OHRFYkt0RXZr",
+   "contentDetails": {
+    "videoId": "cv8tEbKtEvk",
+    "videoPublishedAt": "2026-10-29T01:00:36Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "i3cshc-zhmUJo0CXg61vC8dej4E",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LklENnZFeTk0ajdj",
+   "contentDetails": {
+    "videoId": "ID6vEy94j7c",
+    "videoPublishedAt": "2026-10-28T21:00:32Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "Zpah_Jm0NfjCAfH8-YfhDMLUMxE",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LnBRX0RucjlRNGs4",
+   "contentDetails": {
+    "videoId": "pQ_Dnr9Q4k8",
+    "videoPublishedAt": "2026-10-28T15:08:11Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "3cqKPc7HdIVDf29LlbQzCzvgds4",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkxPUDh1bDNLcVFJ",
+   "contentDetails": {
+    "videoId": "LOP8ul3KqQI",
+    "videoPublishedAt": "2026-10-27T16:18:01Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "_kVKcgcUa68hhEKmjUgkegWlZ68",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LkNzRjVvcVZWNVlF",
+   "contentDetails": {
+    "videoId": "CsF5oqVV5YE",
+    "videoPublishedAt": "2026-10-21T23:00:08Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "IWzZuG-GDNJw-mXefOzoCP9lLvU",
+   "id": "VVVfeDVYRzFPVjJQNnVaWjVGU005VHR3LlNPRjNfZXZQamU4",
+   "contentDetails": {
+    "videoId": "SOF3_evPje8",
+    "videoPublishedAt": "2026-10-21T19:00:23Z"
+   }
+  }
+ ]
+}

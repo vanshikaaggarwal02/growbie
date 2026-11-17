@@ -1,0 +1,29 @@
+{
+ "kind": "youtube#channelListResponse",
+ "items": [
+  {
+   "kind": "youtube#channel",
+   "etag": "vfZBY8qHp6aUkKPjEcX8SFNnyaw",
+   "id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+   "snippet": {
+    "title": "Google for Developers",
+    "description": "Welcome to Google for Developers! Subscribe for the latest tools, APIs, and frameworks. Get step-by-step guides for Gemini and Google AI Studio, master modern engineering practices, and discover next-generation builds, to build what’s next with Google for Developers.\n",
+    "customUrl": "@googledevelopers",
+    "publishedAt": "2007-08-23T00:34:43Z",
+    "country": "US"
+   },
+   "contentDetails": {
+    "relatedPlaylists": {
+     "likes": "",
+     "uploads": "UU_x5XG1OV2P6uZZ5FSM9Ttw"
+    }
+   },
+   "statistics": {
+    "viewCount": "387873607",
+    "subscriberCount": "2680000",
+    "hiddenSubscriberCount": false,
+    "videoCount": "6126"
+   }
+  }
+ ]
+}

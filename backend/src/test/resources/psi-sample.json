@@ -1,0 +1,171 @@
+{
+ "kind": "pagespeedonline#result",
+ "loadingExperience": {
+  "overall_category": "FAST"
+ },
+ "lighthouseResult": {
+  "finalUrl": "https://example.com/",
+  "fetchTime": "2026-11-14T15:54:15.351Z",
+  "configSettings": {
+   "formFactor": "mobile"
+  },
+  "categories": {
+   "performance": {
+    "id": "performance",
+    "score": 1
+   },
+   "accessibility": {
+    "id": "accessibility",
+    "score": 0.96
+   },
+   "best-practices": {
+    "id": "best-practices",
+    "score": 1
+   },
+   "seo": {
+    "id": "seo",
+    "score": 0.8
+   }
+  },
+  "audits": {
+   "target-size": {
+    "id": "target-size",
+    "title": "Touch targets have sufficient size and spacing.",
+    "score": 1,
+    "scoreDisplayMode": "binary"
+   },
+   "structured-data": {
+    "id": "structured-data",
+    "title": "Structured data is valid",
+    "score": null,
+    "scoreDisplayMode": "manual"
+   },
+   "inp-breakdown-insight": {
+    "id": "inp-breakdown-insight",
+    "title": "INP breakdown",
+    "score": null,
+    "scoreDisplayMode": "notApplicable"
+   },
+   "input-button-name": {
+    "id": "input-button-name",
+    "title": "Input buttons have discernible text.",
+    "score": null,
+    "scoreDisplayMode": "notApplicable"
+   },
+   "visual-order-follows-dom": {
+    "id": "visual-order-follows-dom",
+    "title": "Visual order on the page follows DOM order",
+    "score": null,
+    "scoreDisplayMode": "manual"
+   },
+   "viewport-insight": {
+    "id": "viewport-insight",
+    "title": "Optimize viewport for mobile",
+    "score": 1,
+    "scoreDisplayMode": "numeric",
+    "numericValue": 0
+   },
+   "main-thread-tasks": {
+    "id": "main-thread-tasks",
+    "title": "Tasks",
+    "score": 1,
+    "scoreDisplayMode": "informative"
+   },
+   "trusted-types-xss": {
+    "id": "trusted-types-xss",
+    "title": "Mitigate DOM-based XSS with Trusted Types",
+    "score": 1,
+    "scoreDisplayMode": "informative"
+   },
+   "errors-in-console": {
+    "id": "errors-in-console",
+    "title": "No browser errors logged to the console",
+    "score": 1,
+    "scoreDisplayMode": "binary"
+   },
+   "crawlable-anchors": {
+    "id": "crawlable-anchors",
+    "title": "Links are crawlable",
+    "score": 1,
+    "scoreDisplayMode": "binary"
+   },
+   "is-on-https": {
+    "id": "is-on-https",
+    "title": "Uses HTTPS",
+    "score": 1,
+    "scoreDisplayMode": "binary"
+   },
+   "hreflang": {
+    "id": "hreflang",
+    "title": "Document has a valid `hreflang`",
+    "score": 1,
+    "scoreDisplayMode": "binary"
+   },
+   "largest-contentful-paint": {
+    "id": "largest-contentful-paint",
+    "title": "Largest Contentful Paint",
+    "score": 1,
+    "scoreDisplayMode": "numeric",
+    "displayValue": "0.8\u00a0s",
+    "numericValue": 783.5
+   },
+   "landmark-one-main": {
+    "id": "landmark-one-main",
+    "title": "Document does not have a main landmark.",
+    "score": 0,
+    "scoreDisplayMode": "binary"
+   },
+   "cumulative-layout-shift": {
+    "id": "cumulative-layout-shift",
+    "title": "Cumulative Layout Shift",
+    "score": 1,
+    "scoreDisplayMode": "numeric",
+    "displayValue": "0",
+    "numericValue": 0
+   },
+   "meta-description": {
+    "id": "meta-description",
+    "title": "Document does not have a meta description",
+    "score": 0,
+    "scoreDisplayMode": "binary"
+   },
+   "network-dependency-tree-insight": {
+    "id": "network-dependency-tree-insight",
+    "title": "Network dependency tree",
+    "score": 0,
+    "scoreDisplayMode": "numeric"
+   },
+   "first-contentful-paint": {
+    "id": "first-contentful-paint",
+    "title": "First Contentful Paint",
+    "score": 1,
+    "scoreDisplayMode": "numeric",
+    "displayValue": "0.8\u00a0s",
+    "numericValue": 778
+   },
+   "speed-index": {
+    "id": "speed-index",
+    "title": "Speed Index",
+    "score": 1,
+    "scoreDisplayMode": "numeric",
+    "displayValue": "0.8\u00a0s",
+    "numericValue": 778
+   },
+   "total-blocking-time": {
+    "id": "total-blocking-time",
+    "title": "Total Blocking Time",
+    "score": 1,
+    "scoreDisplayMode": "numeric",
+    "displayValue": "0\u00a0ms",
+    "numericValue": 0
+   },
+   "link-text": {
+    "id": "link-text",
+    "title": "Links do not have descriptive text",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "displayValue": "1 link found"
+   }
+  }
+ }
+}

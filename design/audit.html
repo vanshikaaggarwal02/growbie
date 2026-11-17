@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website audit — LaunchMate AI</title>
+<link rel="stylesheet" href="assets/launchmate.css">
+<style>
+  .title { font-size: clamp(32px, 4.2vw, 52px); letter-spacing: -0.035em; line-height: 1.02; }
+  .title em { font-size: 1.08em; color: var(--forest); }
+  .copybox { margin-top: 12px; background: var(--sage); border: 1.5px solid var(--ink); border-radius: var(--r); padding: 12px 14px; }
+  .copybox .label { display: flex; justify-content: space-between; font: 700 11px/1 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 7px; }
+  .copybox p { font-weight: 600; font-size: 16.5px; line-height: 1.4; }
+  .compact { border: 1.5px solid var(--ink); border-radius: var(--r); background: var(--white); }
+  .compact summary { list-style: none; cursor: pointer; padding: 14px 18px 14px 24px; display: grid; grid-template-columns: auto 1fr auto auto; gap: 14px; align-items: center; position: relative; }
+  .compact summary::-webkit-details-marker { display: none; }
+  .compact summary::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--bar); border-radius: var(--r) 0 0 var(--r); }
+  .compact summary::after { content: "+"; font: 800 20px/1 var(--sans); }
+  .compact[open] summary::after { content: "–"; }
+  .compact .more { padding: 0 24px 18px; }
+  .checklist li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 14.5px; }
+  .checklist li:first-child { border-top: 1.5px solid var(--ink); }
+  .checklist b { width: 20px; height: 20px; border-radius: 4px; display: grid; place-items: center; font: 800 12px/1 var(--sans); border: 1.5px solid var(--ink); }
+  .checklist .p b { background: var(--ink); color: var(--lime); }
+  .checklist .f b { color: var(--high); border-color: var(--high); }
+  .checklist .n b { border-style: dashed; border-color: var(--line-2); color: var(--ink-3); }
+  .checklist small { display: block; color: var(--ink-3); font-size: 12.5px; }
+  .sticky { position: sticky; top: 84px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-flag">DESIGN PREVIEW · findings and wording come from a real audit of example.com with a sample business profile</div>
+<header class="rail"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark"></span>LaunchMate</a>
+  <nav class="loop" aria-label="Growth loop">
+    <a class="is-now" href="audit.html"><b>1</b>Diagnose</a><a href="plan.html"><b>2</b>Recommend</a><a href="studio.html"><b>3</b>Execute</a><a href="workspace-business.html"><b>4</b>Measure</a>
+  </nav>
+  <div class="rail-end"><span class="chip-profile"><i></i>Bare Botanics</span></div>
+</div></header>
+
+<main id="main" class="wrap" style="padding-top:44px; padding-bottom:60px">
+  <div class="row" style="margin-bottom:14px"><span class="chip chip-soft">Website audit</span><span class="chip chip-soft">example.com</span><span class="chip chip-soft">14 Nov · 1 page read</span><span class="chip chip-dark">Complete</span></div>
+  <h1 class="title" style="max-width:20ch">The page loads fast, but it says <em>nothing about what you sell.</em></h1>
+  <p class="lead" style="margin:18px 0 38px">Technically sound: quick on mobile, served over HTTPS, not blocked from search. The first fix is to replace the placeholder text with a clear heading and a description of what you offer.</p>
+
+  <div class="grid g-8-4" style="gap:48px; align-items:start">
+    <section aria-labelledby="f-h" class="stack">
+      <div class="row spread"><h2 id="f-h" class="h3">7 findings, most important first</h2><span class="small muted">Every quote is copied from your page. Findings we can't verify are removed.</span></div>
+
+      <article class="receipt high"><div class="receipt-body">
+        <div class="receipt-head"><span class="sev sev-high">High</span><span class="chip chip-soft">Content</span><span class="src src-observed">Observed</span></div>
+        <h3 class="receipt-title">Homepage text doesn't describe Bare Botanics or any product</h3>
+        <div class="receipt-quote"><span class="where">Found on example.com</span><span class="quote"><span class="hl">This domain is for use in documentation examples without needing permission.</span></span></div>
+        <dl class="kv"><dt>Why it matters</dt><dd>Your goal is first online orders, but a visitor can't tell what you sell.</dd><dt>Fix</dt><dd>Replace the placeholder with a short introduction: what you make, who it's for, and the face cleanser and moisturiser, with a clear way to order.</dd></dl>
+        <div class="copybox"><div class="label"><span>Suggested wording</span><span class="src src-user">Built from what you told us</span></div><p>Bare Botanics makes plant-based skincare for sensitive skin, made in small batches. Shop our face cleanser and moisturiser.</p></div>
+        <div class="row" style="margin-top:14px"><a class="btn btn-sm btn-primary" href="studio.html">Draft more versions</a><a class="btn btn-sm" href="plan.html">Add to plan</a></div>
+      </div></article>
+
+      <article class="receipt high"><div class="receipt-body">
+        <div class="receipt-head"><span class="sev sev-high">High</span><span class="chip chip-soft">SEO</span><span class="src src-observed">Observed</span></div>
+        <h3 class="receipt-title">No meta description on the homepage</h3>
+        <div class="receipt-quote"><span class="where">Readiness check</span><span class="quote"><span class="hl">META_DESCRIPTION_PRESENT: FAIL - no meta description tag was found</span></span></div>
+        <dl class="kv"><dt>Why it matters</dt><dd>Search engines pick their own summary line, and here the page text isn't about an offer.</dd><dt>Fix</dt><dd>Add a description of 70 to 160 characters that says what you offer and for whom.</dd></dl>
+        <div class="copybox"><div class="label"><span>Suggested wording · 118 characters</span><span class="src src-user">Built from what you told us</span></div><p>Plant-based face cleanser and moisturiser for adults with sensitive skin, made in small batches. Based in Bengaluru, India.</p></div>
+      </div></article>
+
+      <article class="receipt high"><div class="receipt-body">
+        <div class="receipt-head"><span class="sev sev-high">High</span><span class="chip chip-soft">SEO</span><span class="src src-observed">Observed</span></div>
+        <h3 class="receipt-title">The page title is a placeholder, not your business name</h3>
+        <div class="receipt-quote"><span class="where">Page 1 · title</span><span class="quote"><span class="hl">title: Example Domain</span></span></div>
+        <div class="ba" style="margin-top:14px"><div class="now"><h4>Now · 14 characters</h4><p class="text"><del>Example Domain</del></p></div><div class="new"><h4>Suggested · 55 characters</h4><p class="text">Bare Botanics | Plant-Based Skincare for Sensitive Skin</p></div></div>
+      </div></article>
+
+      <details class="compact" style="--bar: var(--medium)"><summary><span class="sev sev-medium">Medium</span><b>The homepage has no main heading (h1)</b><span class="src src-observed">Observed</span></summary><div class="more"><div class="receipt-quote"><span class="where">Readiness check</span><span class="quote"><span class="hl">SINGLE_H1: FAIL - no h1 heading was found</span></span></div><p class="small">Add one h1 that states the offer in plain words, for example "Plant-based skincare for sensitive skin".</p></div></details>
+      <details class="compact" style="--bar: var(--medium)"><summary><span class="sev sev-medium">Medium</span><b>No navigation or path to a product page</b><span class="src src-observed">Observed</span></summary><div class="more"><div class="receipt-quote"><span class="where">Page 1 · navigation</span><span class="quote"><span class="hl">navigation: (none)</span></span></div><p class="small">Add a simple menu (Shop, About, Contact) and a button leading to the cleanser and moisturiser pages.</p></div></details>
+      <details class="compact" style="--bar: var(--medium)"><summary><span class="sev sev-medium">Medium</span><b>Little to reassure a first-time buyer</b><span class="src src-ai">AI-derived</span></summary><div class="more"><div class="receipt-quote"><span class="where">Page 1 · words</span><span class="quote"><span class="hl">words: 25</span></span></div><p class="small">This may leave a first-time buyer unsure. Add an About section, delivery and returns, and only claims you can support.</p></div></details>
+      <details class="compact" style="--bar: var(--low)"><summary><span class="sev sev-low">Low</span><b>Links lack descriptive text</b><span class="src src-observed">Observed</span></summary><div class="more"><div class="receipt-quote"><span class="where">Google PageSpeed</span><span class="quote"><span class="hl">failing PageSpeed audit: Links do not have descriptive text</span></span></div><p class="small">Use link text that names the destination, such as "Shop the moisturiser".</p></div></details>
+    </section>
+
+    <aside class="stack sticky" aria-label="Audit details">
+      <div class="panel">
+        <div class="row spread" style="margin-bottom:10px"><h2 class="h3">14 checks</h2><span class="src src-observed">Observed</span></div>
+        <ul class="checklist">
+          <li class="p"><b>✓</b><span>Has a title</span></li>
+          <li class="p"><b>✓</b><span>Title is more than a generic word</span></li>
+          <li class="f"><b>✕</b><span>Title is 30 to 60 characters<small>14 characters. Common guidance, not a rule.</small></span></li>
+          <li class="f"><b>✕</b><span>Has a meta description</span></li>
+          <li class="n"><b>–</b><span>Description length<small>Not assessed: there is no description.</small></span></li>
+          <li class="f"><b>✕</b><span>Exactly one main heading</span></li>
+          <li class="p"><b>✓</b><span>Mobile viewport declared</span></li>
+          <li class="p"><b>✓</b><span>Page language declared</span></li>
+          <li class="p"><b>✓</b><span>Served over HTTPS</span></li>
+          <li class="p"><b>✓</b><span>Not blocked from search</span></li>
+          <li class="f"><b>✕</b><span>PageSpeed SEO is good<small>Score 80. 90 or more counts as good.</small></span></li>
+        </ul>
+        <p class="small muted" style="margin-top:10px"><b>10 of 14 passed.</b> A checklist of basics, not a success score.</p>
+      </div>
+      <div class="callout"><b>What this audit can't see.</b> It reads each page's HTML, so content that appears only after scripts run may be missed. It has no analytics, so nothing here says how visitors behave. robots.txt was not found, which is normal.</div>
+    </aside>
+  </div>
+</main>
+
+<nav class="mock-nav" aria-label="Mockup screens">
+  <a href="index.html">Landing</a><a href="start.html">Start</a><a href="workspace-business.html">Business</a><a href="workspace-creator.html">Creator</a><a href="workspace-new.html">New business</a><a class="on" href="audit.html">Audit</a><a href="plan.html">Plan</a><a href="studio.html">Studio</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaunchMate AI — Find what to fix first, with proof</title>
+<link rel="stylesheet" href="assets/launchmate.css">
+<style>
+  .hero { padding: 64px 0 80px; }
+  .hero .display { margin: 18px 0 22px; }
+  .hero-art .receipt { transform: rotate(-1deg); }
+  .hero-art .ba { position: relative; margin: -10px -12px 0 44px; transform: rotate(0.8deg); box-shadow: 5px 5px 0 var(--ink); }
+  .loop-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); }
+  .loop-grid > div { padding: 26px 24px 28px 0; }
+  .loop-grid > div + div { padding-left: 24px; border-left: 1px solid var(--line-2); }
+  .loop-grid .big { font: 400 italic 64px/1 var(--serif); color: var(--forest); margin-bottom: 10px; }
+  .loop-grid h3 { font-size: 24px; margin-bottom: 8px; }
+  .loop-grid p { color: var(--ink-2); font-size: 15.5px; }
+  .loop-grid .proof { margin-top: 16px; font-size: 13.5px; color: var(--ink-3); border-top: 1px dashed var(--line-2); padding-top: 10px; }
+  .badge-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 30px; }
+  .badge-row > div { padding: 18px 20px 0 0; }
+  .badge-row p { font-size: 15px; color: #D5E3D6; margin-top: 10px; }
+  .badge-row .src { background: transparent; color: var(--paper); border-color: var(--paper); }
+  .badge-row .src-user { color: #A9C6E0; border-color: #A9C6E0; } .badge-row .src-user::before { border-color: #A9C6E0; }
+  .badge-row .src-ai { color: #CFE0D1; border-color: #CFE0D1; } .badge-row .src-ai::before { background: repeating-linear-gradient(45deg, #CFE0D1 0 2px, transparent 2px 4px); }
+  .badge-row .src-na { color: #A7BBA9; border-color: #6F8C75; } .badge-row .src-na::before { border-color: #6F8C75; background: linear-gradient(135deg, transparent 44%, #6F8C75 44% 56%, transparent 56%); }
+  .paths { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1.5px solid var(--ink); }
+  .paths > a { text-decoration: none; padding: 28px 28px 32px 0; display: block; }
+  .paths > a + a { padding-left: 28px; border-left: 1px solid var(--line-2); }
+  .paths > a:hover h3 { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 2px; }
+  .paths .tag { margin-bottom: 14px; }
+  .paths h3 { font-size: 28px; margin-bottom: 10px; }
+  .paths li { padding-left: 22px; position: relative; font-size: 15.5px; margin-top: 7px; color: var(--ink-2); }
+  .paths li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 9px; height: 9px; background: var(--lime); border: 1.5px solid var(--ink); border-radius: 50%; }
+  .never { columns: 2; column-gap: 48px; margin-top: 24px; }
+  .never li { break-inside: avoid; padding: 14px 0 14px 34px; border-top: 1px solid var(--line-2); position: relative; font-size: 17px; }
+  .never li::before { content: "×"; position: absolute; left: 0; top: 10px; font: 800 24px/1 var(--sans); color: var(--high); }
+  @media (max-width: 960px) {
+    .loop-grid, .paths, .badge-row { grid-template-columns: 1fr 1fr; }
+    .loop-grid > div:nth-child(3), .paths > a:nth-child(3) { border-left: 0; padding-left: 0; }
+    .hero-art .ba { margin: 14px 0 0; transform: none; }
+    .never { columns: 1; }
+  }
+  @media (max-width: 560px) {
+    .loop-grid, .paths, .badge-row { grid-template-columns: 1fr; }
+    .loop-grid > div + div, .paths > a + a { border-left: 0; padding-left: 0; border-top: 1px solid var(--line-2); }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-flag">DESIGN PREVIEW · layout and wording only · example text comes from real test runs, not live customers</div>
+
+<header class="rail">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark"></span>LaunchMate</a>
+    <nav class="links" aria-label="Main"><a href="#loop">How it works</a><a href="#proof">Why you can trust it</a><a href="#start">Start</a></nav>
+    <div class="rail-end"><a class="btn btn-primary btn-sm" href="start.html">Start a diagnosis</a></div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap grid g-7-5" style="align-items:center; gap:56px">
+      <div>
+        <p class="eyebrow">For new businesses, small shops and YouTube creators</p>
+        <h1 class="display">Find what to fix first, <em>with proof.</em></h1>
+        <p class="lead">LaunchMate reads your website or your YouTube channel, quotes the exact evidence, ranks what to change, and drafts the new wording. You approve every word. Nothing is published for you.</p>
+        <div class="row" style="margin-top:30px; gap:16px">
+          <a class="btn btn-primary" href="start.html">Start a diagnosis</a>
+          <a class="btn btn-quiet" href="audit.html">See a real example</a>
+        </div>
+        <p class="small muted" style="margin-top:18px">Built on live data from Google PageSpeed, the YouTube Data API and GoDaddy. No sales or traffic numbers are ever made up.</p>
+      </div>
+      <div class="hero-art" aria-label="Example of a finding and its suggested fix">
+        <div class="receipt high">
+          <div class="receipt-body">
+            <div class="receipt-head"><span class="sev sev-high">High</span><span class="src src-observed">Observed</span></div>
+            <p class="receipt-title">The homepage has no main heading</p>
+            <div class="receipt-quote"><span class="where">Found on example.com</span><span class="quote"><span class="hl">SINGLE_H1: FAIL - no h1 heading was found</span></span></div>
+            <p class="small muted">Without one, neither visitors nor search engines get a clear statement of what the page offers.</p>
+          </div>
+        </div>
+        <div class="ba">
+          <div class="now"><h4>Now</h4><p class="text"><del>Example Domain</del></p></div>
+          <div class="new"><h4>Suggested</h4><p class="text">Bare Botanics | Plant-Based Skincare for Sensitive Skin</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-2" id="loop">
+    <div class="wrap">
+      <p class="eyebrow">The loop</p>
+      <h2 class="h2" style="margin:12px 0 34px; max-width:20ch">Diagnose, recommend, execute, <em>measure.</em></h2>
+      <div class="loop-grid">
+        <div><div class="big">1</div><h3>Diagnose</h3><p>Reads up to 10 pages of your site, or your channel's recent videos, and runs plain checks you can verify yourself.</p><p class="proof">14 readiness checks · Google PageSpeed · YouTube public data</p></div>
+        <div><div class="big">2</div><h3>Recommend</h3><p>Ranks the changes by impact and effort. Every item points at the line of evidence it rests on.</p><p class="proof">Priority comes from a fixed rule, not a hidden score</p></div>
+        <div><div class="big">3</div><h3>Execute</h3><p>Drafts titles, page copy, hooks and scripts from your own facts. You pick a version. You publish it.</p><p class="proof">Never publishes, buys or edits anything for you</p></div>
+        <div><div class="big">4</div><h3>Measure</h3><p>Run it again and see what is fixed, what is still there, and what is new. No claim that a change caused a result.</p><p class="proof">Checks that pass or fail, not predictions</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-dark" id="proof">
+    <div class="wrap">
+      <p class="eyebrow">Why you can trust it</p>
+      <h2 class="h2" style="margin:12px 0 10px; max-width:30ch">We quote it, or <em>we don't say it.</em></h2>
+      <p class="lead" style="color:#D5E3D6">Every finding is tagged with where it came from. A finding whose evidence cannot be found in your own pages or data is removed before you see it.</p>
+      <div class="badge-row">
+        <div><span class="src src-observed">Observed</span><p>Measured from your public pages, PageSpeed or YouTube data.</p></div>
+        <div><span class="src src-user">You told us</span><p>Typed in by you. Used, but never presented as verified.</p></div>
+        <div><span class="src src-ai">AI-derived</span><p>A judgement, worded as a likelihood. Never as a fact.</p></div>
+        <div><span class="src src-na">Unavailable</span><p>Data we cannot get, such as watch time. Shown struck through, never as zero.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="start">
+    <div class="wrap">
+      <p class="eyebrow">Where are you starting?</p>
+      <h2 class="h2" style="margin:12px 0 30px">Three starting points, <em>one honest method.</em></h2>
+      <div class="paths">
+        <a href="start.html"><span class="chip chip-soft tag">Not launched yet</span><h3>New business</h3><ul><li>Name ideas with taglines</li><li>Live domain availability and price</li><li>A launch checklist built from your facts</li></ul></a>
+        <a href="start.html"><span class="chip chip-soft tag">Already online</span><h3>Business with a website</h3><ul><li>Audit of up to 10 pages</li><li>Findings with the evidence quoted</li><li>Replacement wording you can approve</li></ul></a>
+        <a href="start.html"><span class="chip chip-soft tag">Making videos</span><h3>YouTube creator</h3><ul><li>Cadence, formats and title patterns</li><li>Content gaps and new video ideas</li><li>A 7-day calendar sized to how often you post</li></ul></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-2">
+    <div class="wrap grid g-5-7" style="gap:56px">
+      <div><p class="eyebrow">What you will not get</p><h2 class="h2" style="margin-top:12px">Things we <em>refuse</em> to do.</h2></div>
+      <ul class="never">
+        <li>Invented traffic, sales or follower numbers</li>
+        <li>Promises of reach, rankings or growth</li>
+        <li>Claims your own facts do not support</li>
+        <li>Posting, editing or buying anything for you</li>
+        <li>Guesses about watch time or retention</li>
+        <li>Advice to change a domain without the risks</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site"><div class="wrap row spread"><span>LaunchMate AI · built for the GoDaddy hackathon</span><span>Prices from GoDaddy are indicative. Confirm at checkout.</span></div></footer>
+
+<nav class="mock-nav" aria-label="Mockup screens">
+  <a class="on" href="index.html">Landing</a><a href="start.html">Start</a><a href="workspace-business.html">Business</a><a href="workspace-creator.html">Creator</a><a href="workspace-new.html">New business</a><a href="audit.html">Audit</a><a href="plan.html">Plan</a><a href="studio.html">Studio</a>
+</nav>
+</body>
+</html>

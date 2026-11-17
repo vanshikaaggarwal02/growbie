@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bare Botanics — LaunchMate AI</title>
+<link rel="stylesheet" href="assets/launchmate.css">
+<style>
+  .title { font-size: clamp(34px, 4.6vw, 56px); letter-spacing: -0.035em; line-height: 1; max-width: 18ch; }
+  .title em { font-size: 1.08em; color: var(--forest); }
+  .psi { display: grid; grid-template-columns: 150px 1fr 44px; gap: 14px; align-items: center; margin-top: 12px; font-size: 15px; }
+  .psi b { text-align: right; font-size: 20px; letter-spacing: -0.02em; }
+  .tick { display: grid; gap: 0; }
+  .tick li { padding: 11px 0 11px 30px; border-top: 1px solid var(--line); position: relative; font-size: 15.5px; }
+  .tick li:first-child { border-top: 1.5px solid var(--ink); }
+  .tick li::before { content: "✓"; position: absolute; left: 0; top: 9px; width: 20px; height: 20px; border-radius: 50%; background: var(--ink); color: var(--lime); display: grid; place-items: center; font: 800 12px/1 var(--sans); }
+  .tick.warn li::before { content: "!"; background: var(--white); color: var(--high); border: 1.5px solid var(--high); }
+  .next h2 { font-size: 26px; line-height: 1.12; margin: 10px 0 12px; }
+  .next .why { color: #D5E3D6; font-size: 15.5px; }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-3); margin-top: 8px; }
+  .legend i { display: inline-block; width: 12px; height: 12px; border: 1.5px solid var(--ink); vertical-align: -2px; margin-right: 5px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-flag">DESIGN PREVIEW · sample business · text and numbers come from a real test run of the product</div>
+<header class="rail"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark"></span>LaunchMate</a>
+  <nav class="loop" aria-label="Growth loop">
+    <a class="is-done" href="audit.html"><b>✓</b>Diagnose</a>
+    <a class="is-done" href="plan.html"><b>✓</b>Recommend</a>
+    <a class="is-now" href="studio.html"><b>3</b>Execute</a>
+    <a href="#trail"><b>4</b>Measure</a>
+  </nav>
+  <div class="rail-end"><span class="chip-profile"><i></i>Bare Botanics</span></div>
+</div></header>
+
+<main id="main">
+  <section class="band" style="padding:48px 0 40px">
+    <div class="wrap">
+      <div class="row" style="margin-bottom:16px"><span class="chip chip-soft">Business with a website</span><span class="chip chip-soft">example.com</span><span class="chip chip-soft">Audited 14 Nov</span></div>
+      <div class="grid g-7-5" style="align-items:end; gap:40px">
+        <h1 class="title">Your homepage doesn't yet say <em>what you sell.</em></h1>
+        <div class="row" style="justify-content:flex-end; gap:12px">
+          <a class="btn" href="audit.html">Re-run the audit</a>
+          <a class="btn btn-primary" href="plan.html">Open the plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap grid g-7-5" style="gap:48px; padding-bottom:56px; align-items:start">
+    <div class="stack">
+      <div>
+        <div class="row spread" style="margin-bottom:12px"><h2 class="h3">Readiness checks</h2><span class="src src-observed">Observed</span></div>
+        <div class="checks" role="img" aria-label="Fifteen checks: ten passed, four failed, one could not be assessed">
+          <i class="p">✓</i><i class="p">✓</i><i class="f">✕</i><i class="f">✕</i><i class="n">–</i><i class="f">✕</i><i class="p">✓</i><i class="p">✓</i><i class="p">✓</i><i class="p">✓</i><i class="p">✓</i><i class="p">✓</i><i class="p">✓</i><i class="p">✓</i><i class="f">✕</i>
+        </div>
+        <p style="margin-top:12px; font-size:17px"><b>10 of 14 checks passed.</b> <span class="muted">One could not be assessed, so it counts as neither a pass nor a fail. This is a checklist of basics, not a measure of how well the business is doing.</span></p>
+      </div>
+      <hr class="rule rule-soft">
+      <div>
+        <div class="row spread"><h2 class="h3">Google PageSpeed, on mobile</h2><span class="src src-observed">Observed</span></div>
+        <div class="psi"><span>Performance</span><div class="bar good"><i style="width:100%"></i></div><b>100</b></div>
+        <div class="psi"><span>Accessibility</span><div class="bar good"><i style="width:96%"></i></div><b>96</b></div>
+        <div class="psi"><span>Best practices</span><div class="bar good"><i style="width:100%"></i></div><b>100</b></div>
+        <div class="psi"><span>SEO</span><div class="bar mid"><i style="width:80%"></i></div><b>80</b></div>
+        <p class="small muted" style="margin-top:12px">90 or more counts as good. Measured 14 Nov by Google PageSpeed Insights. Real visitor data (Chrome UX Report) rates this site FAST.</p>
+      </div>
+    </div>
+
+    <aside class="stack" aria-label="Next step">
+      <div class="panel panel-dark next">
+        <p class="eyebrow">Do this first</p>
+        <h2>Add one heading that names your product and who it's for</h2>
+        <p class="why">Without a main heading, neither visitors nor search engines get a clear statement of what the page offers.</p>
+        <div class="row" style="margin-top:14px; gap:8px"><span class="chip chip-lime">High impact</span><span class="chip" style="background:transparent;color:var(--paper);border-color:var(--paper)">Low effort</span></div>
+        <div class="row" style="margin-top:20px; gap:12px"><a class="btn btn-primary" href="studio.html">Draft the wording</a><a class="btn btn-quiet" style="color:var(--paper)" href="plan.html">See why</a></div>
+      </div>
+      <div>
+        <div class="row spread" style="margin-bottom:6px"><h2 class="h3">Where everything sits</h2><a class="small" href="plan.html">Full map</a></div>
+        <svg class="map" viewBox="0 0 380 350" role="img" aria-labelledby="mt1 md1"><title id="mt1">Opportunity map</title><desc id="md1">Seven recommendations placed by impact and effort. Items 1 to 3 are in the shaded high-priority corner.</desc>
+          <g stroke="#17261C" stroke-width="1.5">
+            <rect x="56" y="14" width="100" height="96" fill="#C8F169"/><rect x="156" y="14" width="100" height="96" fill="#C8F169"/><rect x="256" y="14" width="100" height="96" fill="#DDE6D5"/>
+            <rect x="56" y="110" width="100" height="96" fill="#DDE6D5"/><rect x="156" y="110" width="100" height="96" fill="#DDE6D5"/><rect x="256" y="110" width="100" height="96" fill="#ECEBE0"/>
+            <rect x="56" y="206" width="100" height="96" fill="#ECEBE0"/><rect x="156" y="206" width="100" height="96" fill="#ECEBE0"/><rect x="256" y="206" width="100" height="96" fill="#ECEBE0"/>
+          </g>
+          <g font-size="10.5" font-weight="700" fill="#44564A" letter-spacing="1"><text x="64" y="102">DO FIRST</text><text x="164" y="102">HIGH</text><text x="264" y="102">MEDIUM</text><text x="64" y="198">MEDIUM</text><text x="164" y="198">MEDIUM</text><text x="264" y="198">LOW</text><text x="64" y="294">LOW</text><text x="164" y="294">LOW</text><text x="264" y="294">LOW</text></g>
+          <g font-size="11" font-weight="700" fill="#17261C" text-anchor="end"><text x="48" y="66">HIGH</text><text x="48" y="162">MED</text><text x="48" y="258">LOW</text></g>
+          <g font-size="11" font-weight="700" fill="#17261C" text-anchor="middle"><text x="106" y="320">LOW</text><text x="206" y="320">MEDIUM</text><text x="306" y="320">HIGH</text><text x="206" y="341" letter-spacing="2" fill="#55675A">EFFORT →</text><text transform="translate(12 158) rotate(-90)" letter-spacing="2" fill="#55675A">IMPACT →</text></g>
+          <g fill="#17261C"><circle cx="84" cy="42" r="13"/><circle cx="128" cy="78" r="13"/><circle cx="206" cy="62" r="13"/><circle cx="106" cy="158" r="13"/><circle cx="180" cy="140" r="13"/><circle cx="232" cy="178" r="13"/><circle cx="106" cy="254" r="13"/></g>
+          <g fill="#C8F169" font-size="12" font-weight="800" text-anchor="middle"><text x="84" y="46">1</text><text x="128" y="82">2</text><text x="206" y="66">3</text><text x="106" y="162">4</text><text x="180" y="144">5</text><text x="232" y="182">6</text><text x="106" y="258">7</text></g>
+        </svg>
+        <p class="legend"><span><i style="background:#C8F169"></i>High priority</span><span><i style="background:#DDE6D5"></i>Medium</span><span><i style="background:#ECEBE0"></i>Low</span></p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="band band-2">
+    <div class="wrap grid g-2" style="gap:56px">
+      <div>
+        <h2 class="h3" style="margin-bottom:14px">What is already working</h2>
+        <ul class="tick">
+          <li>Loads quickly on mobile (performance 100)</li>
+          <li>Served over HTTPS</li>
+          <li>Not blocked from search engines</li>
+          <li>Declares a mobile viewport and a page language</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="h3" style="margin-bottom:14px">What needs attention</h2>
+        <ul class="tick warn">
+          <li><b>No main heading.</b> <span class="muted">SINGLE_H1: FAIL</span></li>
+          <li><b>Title is a generic placeholder.</b> <span class="muted">title: Example Domain</span></li>
+          <li><b>No meta description.</b> <span class="muted">META_DESCRIPTION_PRESENT: FAIL</span></li>
+          <li><b>No navigation or path to order.</b> <span class="muted">navigation: (none)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="trail">
+    <div class="wrap grid g-5-7" style="gap:56px">
+      <div><p class="eyebrow">Your trail</p><h2 class="h2" style="margin-top:12px">What you've done, and <em>how you'll know it worked.</em></h2></div>
+      <ol class="trail">
+        <li class="done"><time>14 Nov · Diagnose</time><b>Website audited.</b> 3 pages read, PageSpeed measured, 7 findings, all with their evidence quoted.</li>
+        <li class="done"><time>14 Nov · Recommend</time><b>7-step plan created.</b> Ranked by impact and effort.</li>
+        <li class="done"><time>Today · Execute</time><b>Heading wording approved.</b> Marked <span class="chip chip-soft">In progress</span> by you.</li>
+        <li class="next"><time>Next · Measure</time><b>Re-run the audit after you publish.</b> We'll show what is fixed, what is still there and what is new. We won't claim a change caused any result.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<nav class="mock-nav" aria-label="Mockup screens">
+  <a href="index.html">Landing</a><a href="start.html">Start</a><a class="on" href="workspace-business.html">Business</a><a href="workspace-creator.html">Creator</a><a href="workspace-new.html">New business</a><a href="audit.html">Audit</a><a href="plan.html">Plan</a><a href="studio.html">Studio</a>
+</nav>
+</body>
+</html>

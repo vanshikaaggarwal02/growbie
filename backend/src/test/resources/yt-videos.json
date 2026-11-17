@@ -1,0 +1,189 @@
+{
+ "kind": "youtube#videoListResponse",
+ "items": [
+  {
+   "id": "vLAegkGGWrM",
+   "snippet": {
+    "publishedAt": "2026-11-12T17:00:11Z",
+    "title": "Building with Gemini in Google Antigravity",
+    "description": "See what you can build using our latest Gemini models in Google Antigravity.  From in-browser animation and multimodal prototyping to autonomous codebase modernization, explore how you can ship complex architectures straight from a prompt.\n\nWhat are you building with Gemini in Google Antigravity? Sh",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT1M3S"
+   },
+   "statistics": {
+    "viewCount": "17439",
+    "likeCount": "158",
+    "favoriteCount": "0",
+    "commentCount": "12"
+   }
+  },
+  {
+   "id": "rsOiZE19RVo",
+   "snippet": {
+    "publishedAt": "2026-10-29T20:00:20Z",
+    "title": "Accelerate shipping to scale with Google Antigravity",
+    "description": "Building software to move tens of millions of vehicles requires massive infrastructure. Using Google Antigravity, Move Cars delivers fully tested production features in a single day, letting a small team scale complex logistics while staying in total control. \n\nDiscover what changes when agents run ",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT2M35S"
+   },
+   "statistics": {
+    "viewCount": "14475",
+    "likeCount": "115",
+    "favoriteCount": "0",
+    "commentCount": "14"
+   }
+  },
+  {
+   "id": "cv8tEbKtEvk",
+   "snippet": {
+    "publishedAt": "2026-10-29T01:00:36Z",
+    "title": "🪴 Building an autonomous plant rover with Gemini Live",
+    "description": "Meet Sprout: an semi-autonomous plant rover built with Gemini Live and Robotics ER 2.0 that navigates office spaces to hunt for sunlight and care for greenery.\n\n🔗 Explore the build → https://goo.gle/3UCdUOa \n\n\nSubscribe to Google for Developers → https://goo.gle/developers   \n\n\nProducts Mentioned: G",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT2M6S"
+   },
+   "statistics": {
+    "viewCount": "3403",
+    "likeCount": "136",
+    "favoriteCount": "0",
+    "commentCount": "6"
+   }
+  },
+  {
+   "id": "ID6vEy94j7c",
+   "snippet": {
+    "publishedAt": "2026-10-28T21:00:32Z",
+    "title": "Building real-time vision & edge navigation with Gemini Live",
+    "description": "Meet Sprout, a semi-autonomous plant robot powered by Gemini. Watch as it navigates the office in search of sunlight, pings for help, and uses Gemini Live and Robotics ER 2.0 for vision to care for fellow office plants.\n\nTry building today → https://goo.gle/4BmThG6\n\n\nSubscribe to Google for Develope",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT2M3S"
+   },
+   "statistics": {
+    "viewCount": "42017",
+    "likeCount": "539",
+    "favoriteCount": "0",
+    "commentCount": "43"
+   }
+  },
+  {
+   "id": "pQ_Dnr9Q4k8",
+   "snippet": {
+    "publishedAt": "2026-10-28T15:08:11Z",
+    "title": "Functional smart devices using Gemini 4 Argon and Google Antigravity",
+    "description": "What happens when you have a wild hardware idea and zero clue how to build it? Watch to see how these makers used Gemini 4 Argon and Google Antigravity to take a custom \"Surf Clock\" from a rough sketch to a working prototype.\n\nThe models explored: \n*Initial concepts to lock in a retro 60s design\n*Ra",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT2M32S"
+   },
+   "statistics": {
+    "viewCount": "29453",
+    "likeCount": "269",
+    "favoriteCount": "0",
+    "commentCount": "22"
+   }
+  },
+  {
+   "id": "LOP8ul3KqQI",
+   "snippet": {
+    "publishedAt": "2026-10-27T16:18:01Z",
+    "title": "Introducing Genie 4",
+    "description": "Raia Hadsell, Diego Rivas, and Hang Qi from Google DeepMind join host Logan Kilpatrick to introduce Genie 4, the latest world model from Google DeepMind. \n\nTheir conversation covers:\n*What world models are\n*The arc from Genie 1 to Genie 4\n*Live demos showcasing the model’s biggest leaps forward\n*The",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT47M26S"
+   },
+   "statistics": {
+    "viewCount": "62650",
+    "likeCount": "805",
+    "favoriteCount": "0",
+    "commentCount": "65"
+   }
+  },
+  {
+   "id": "CsF5oqVV5YE",
+   "snippet": {
+    "publishedAt": "2026-10-21T23:00:08Z",
+    "title": "🔊 Voice design and voice replication with Gemini 3.8 Flash TTS",
+    "description": "Google DeepMind’s Thor Schaeff demos how Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS let you design custom voices from a text prompt or replicate your own, with support for 100+ languages and easy access via the Gemini API.\n\nTry it now at ai.studio/generate-speech. Have questions? Drop them i",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT1M30S"
+   },
+   "statistics": {
+    "viewCount": "10879",
+    "likeCount": "344",
+    "favoriteCount": "0",
+    "commentCount": "6"
+   }
+  },
+  {
+   "id": "SOF3_evPje8",
+   "snippet": {
+    "publishedAt": "2026-10-21T19:00:23Z",
+    "title": "Design and replicate voices with Gemini 3.8 Flash TTS",
+    "description": "See how Gemini 3.8 Flash TTS lets you design custom voices from a text prompt and replicate your own voice in Google AI Studio. Google DeepMind’s Thor Schaeff walks through:\n\n*Voice design\n*Voice replication\n*Multi-speaker dialogue generation\n*Building with the Gemini API across 100+ languages\n*Part",
+    "tags": [
+     "Google",
+     "developers"
+    ],
+    "liveBroadcastContent": "none",
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT14M9S"
+   },
+   "statistics": {
+    "viewCount": "36913",
+    "likeCount": "337",
+    "favoriteCount": "0",
+    "commentCount": "20"
+   }
+  }
+ ]
+}
