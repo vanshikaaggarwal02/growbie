@@ -34,10 +34,14 @@ If the mail check fails, ask GoDaddy to open outbound port 465, or the reset and
 
 ## 3. Get the code onto the server
 
+The server runs straight from GitHub. The repository is public, so no login is needed:
+
 ```bash
-git clone <your repository address> /srv/growbie
-cd /srv/growbie
+git clone https://github.com/vanshikaaggarwal02/growbie.git ~/growbie
+cd ~/growbie
 ```
+
+Always deploy from a commit on `main`. The live site then matches a version you can see on GitHub and roll back to.
 
 ## 4. Create the production settings
 
@@ -58,7 +62,7 @@ Never commit `.env.prod`; it is already git-ignored.
 ## 5. Start it
 
 ```bash
-docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --build
+sudo docker compose -p growbie -f docker-compose.prod.yml --env-file .env.prod up -d --build
 ```
 
 The first build takes a few minutes. Then open `https://growbie.in`. The certificate is requested automatically once DNS points at the server.
@@ -75,7 +79,7 @@ docker compose -f docker-compose.prod.yml logs -f backend
 ```bash
 ./scripts/backup-db.sh                       # saves backups/growbie-<date>.sql.gz
 crontab -e                                   # to run it daily at 03:00, add:
-0 3 * * * /srv/growbie/scripts/backup-db.sh
+0 3 * * * /home/growbieops/growbie/scripts/backup-db.sh >> /home/growbieops/growbie/backups/backup.log 2>&1
 ```
 
 Copy backups off the server now and then.
@@ -83,11 +87,13 @@ Copy backups off the server now and then.
 ## 7. Updating later
 
 ```bash
-cd /srv/growbie && git pull
-docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --build
+cd ~/growbie && git pull
+sudo docker compose -p growbie -f docker-compose.prod.yml --env-file .env.prod up -d --build
 ```
 
-Database changes apply automatically on start.
+Database changes apply automatically on start. Keep the `-p growbie` part: it keeps the database volume the same.
+
+To roll back, check out the earlier commit and run the same command: `git checkout <commit>`.
 
 ## Before you demo
 
