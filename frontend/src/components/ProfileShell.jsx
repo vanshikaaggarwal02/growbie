@@ -4,6 +4,7 @@ import { api } from '../lib/api.js'
 import { useAuth } from '../lib/auth.jsx'
 import { ErrorBox, Loading, useLoad } from './ui.jsx'
 import { Brand, Footer } from './Brand.jsx'
+import Tour, { TOUR_EVENT } from './Tour.jsx'
 
 const ProfileContext = createContext(null)
 export const useProfile = () => useContext(ProfileContext)
@@ -30,6 +31,7 @@ export default function ProfileShell() {
         </nav>
         <div className="rail-end">
           {data && <Link className="chip-profile" to={`${base}/details`} title="Edit business details"><i></i>{data.displayName}</Link>}
+          <button className="btn btn-sm btn-quiet" onClick={() => window.dispatchEvent(new Event(TOUR_EVENT))}>Tour</button>
           <button className="btn btn-sm" onClick={signOut}>Sign out</button>
         </div>
       </div></header>
@@ -39,6 +41,7 @@ export default function ProfileShell() {
         {data && <ProfileContext.Provider value={{ ...data, reloadProfile: reload }}><Outlet /></ProfileContext.Provider>}
       </main>
       <Footer />
+      <Tour />
     </>
   )
 }

@@ -1,0 +1,28 @@
+// One source for the in-app tour and the public guide, so they always say the same thing.
+// `path` is the section under /app/profiles/:id ('' is the overview). `nav` is the label in the top bar.
+export const STEPS = [
+  { path: '', nav: 'Overview', image: 'overview', title: 'Start here: your overview',
+    body: 'This is home base for one business. The dark panel shows the single most useful next step. Below it are the three areas we look at, your roadmap, and a trail of what has been done.',
+    doHere: ['Read the recommended next step and press its button.', 'Check each area: it says Analysed, Not yet analysed, Not provided or Unavailable.', 'Use "Edit details" any time to add a website, channel or domain.'] },
+  { path: 'seo', nav: 'SEO & Website', image: 'seo', title: 'SEO & Website',
+    body: 'How the website is doing. Every finding quotes the exact line from your page. The checks and PageSpeed numbers are measured; the written advice is AI-suggested. Your domain is assessed here too, and we only suggest changing it for a real reason.',
+    doHere: ['Start with the High findings. Each one has the evidence, why it matters and a fix.', 'Open "Suggested wording" boxes and copy what you like.', 'Run a new audit after you publish a change, then compare it with the last one.'] },
+  { path: 'geo', nav: 'GEO', image: 'geo', title: 'GEO: AI search readiness',
+    body: 'Can AI tools read and describe your business? These are measured signals on your site. We have not run tests of what AI tools actually say, and we tell you that instead of guessing.',
+    doHere: ['Look at which signals are in place and which are not.', 'Remember it is a checklist, not a score. Nobody can promise a place in AI answers.'] },
+  { path: 'youtube', nav: 'YouTube', image: 'youtube', title: 'YouTube (optional)',
+    body: 'With a channel, you see Shorts and long videos compared, how often you post, and ideas for what to try. Without one, you can ask whether YouTube suits your business at all.',
+    doHere: ['If you have a channel, read the Shorts and long-form comparison first.', 'No channel? Press "Assess whether YouTube suits us" for an honest answer.', 'Anything YouTube will not share, like watch time, is marked unavailable.'] },
+  { path: 'plans', nav: 'Growth Plan', image: 'plans', title: 'Growth Plan',
+    body: 'Everything we found, turned into one ordered roadmap. Mark steps as in progress or done, and use "Draft the wording" to get text you can paste into your own site.',
+    doHere: ['Work from the top. The map shows what is quick and high-impact.', 'Mark each step as you go so the plan keeps your progress.', 'Build a new plan later. It carries over what you have already done.'] },
+  { path: 'launch', nav: 'Domains & names', image: 'domains', title: 'Domains & names (optional)',
+    body: 'Check whether a domain is free and what it costs through GoDaddy, or get name ideas. You buy it yourself. Growbie never buys or changes anything.',
+    doHere: ['Type one or more domains separated by commas and press Check availability.', 'Press "Suggest names" for ideas with availability already checked.', 'Prices are indicative. Confirm them at checkout.'] },
+  { path: 'reports', nav: 'Reports & History', image: 'reports', title: 'Reports & History',
+    body: 'Every analysis is saved on its own. Compare the latest with an earlier one to see what is fixed, what is still there and what is new.',
+    doHere: ['Pick a tab: SEO & Website, YouTube or Growth plans.', 'Press "Compare with latest" on an older audit.', 'We never claim a change caused a result. We only show what changed.'] },
+  { path: null, nav: null, title: 'How to read the labels',
+    body: 'Observed means measured from public pages or data. You told us means you typed it in. AI-suggested means an AI wrote it as a suggestion, never as fact. Unavailable means we could not get it, and it is never shown as zero. That is the tour. Replay it any time from the Tour button.',
+    doHere: [] },
+]

@@ -10,6 +10,7 @@ export default function Layout() {
       <header className="rail"><div className="wrap">
         <Brand to="/" />
         <nav className="links" aria-label="Main">
+          <NavLink to="/guide">Guide</NavLink>
           {user && <NavLink to="/app">Your businesses</NavLink>}
         </nav>
         <div className="rail-end">

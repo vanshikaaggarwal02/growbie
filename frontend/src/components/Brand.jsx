@@ -29,7 +29,7 @@ export function Footer() {
   return (
     <footer className="site-footer"><div className="wrap">
       <div><Brand to="/" /><p className="tagline-sm">{TAGLINE}</p></div>
-      <p className="small"><Link to="/contact">Contact us</Link> · <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a><br />growbie.in</p>
+      <p className="small"><Link to="/guide">Guide</Link> · <Link to="/contact">Contact us</Link> · <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a><br />growbie.in</p>
     </div></footer>
   )
 }

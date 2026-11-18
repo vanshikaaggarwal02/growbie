@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760"><defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1E2A50"/></marker></defs><rect width="1200" height="760" fill="#F6F5EF"/><text x="40" y="44" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="800" fill="#1E2A50">Growbie: how it fits together</text>
+<text x="40" y="68" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#55675A">Arrows show the direction requests and data travel. Green boxes are parts we built; white boxes are outside services.</text>
+<rect x="40" y="110" width="200" height="96" rx="14" fill="#FFFFFF" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="140.0" y="140" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E2A50">Visitor's browser</text>
+<text x="140.0" y="166" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">React app</text>
+<text x="140.0" y="185" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">(built once, served as files)</text>
+<rect x="300" y="110" width="260" height="96" rx="14" fill="#EEF6E3" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="430.0" y="140" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E2A50">Web server (Caddy)</text>
+<text x="430.0" y="166" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">HTTPS certificate, automatic</text>
+<text x="430.0" y="185" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Serves the site and sends /api on</text>
+<rect x="620" y="90" width="300" height="140" rx="14" fill="#EEF6E3" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="770.0" y="120" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E2A50">Backend API (Spring Boot)</text>
+<text x="770.0" y="146" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Sign-in, profiles, audits, domains</text>
+<text x="770.0" y="165" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">channel, GEO, growth plan, content</text>
+<text x="770.0" y="184" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Background jobs and rate limits</text>
+<rect x="990" y="110" width="170" height="96" rx="14" fill="#EEF6E3" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="1075.0" y="140" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E2A50">PostgreSQL</text>
+<text x="1075.0" y="166" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Users, profiles and results</text>
+<text x="1075.0" y="185" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Every analysis kept</text>
+<line x1="240" y1="158" x2="300" y2="158" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<text x="270" y="148" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#55675A">HTTPS</text>
+<line x1="560" y1="158" x2="620" y2="158" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<text x="590" y="148" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#55675A">/api</text>
+<line x1="920" y1="158" x2="990" y2="158" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<text x="955" y="148" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#55675A">SQL</text>
+<rect x="40" y="350" width="170" height="112" rx="14" fill="#EEF6E3" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="125.0" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1E2A50">Our crawler</text>
+<text x="125.0" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Reads up to 10 public pages</text>
+<text x="125.0" y="425" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">no login needed</text>
+<line x1="720" y1="230" x2="125" y2="350" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="234" y="350" width="170" height="112" rx="14" fill="#FFFFFF" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="319.0" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1E2A50">Google PageSpeed</text>
+<text x="319.0" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Mobile speed and scores</text>
+<text x="319.0" y="425" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">public API key</text>
+<line x1="720" y1="230" x2="319" y2="350" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="428" y="350" width="170" height="112" rx="14" fill="#FFFFFF" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="513.0" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1E2A50">YouTube Data API</text>
+<text x="513.0" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Public channel and videos</text>
+<text x="513.0" y="425" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">public API key</text>
+<line x1="720" y1="230" x2="513" y2="350" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="622" y="350" width="170" height="112" rx="14" fill="#FFFFFF" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="707.0" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1E2A50">GoDaddy Domains</text>
+<text x="707.0" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Availability and prices</text>
+<text x="707.0" y="425" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">read-only key</text>
+<line x1="720" y1="230" x2="707" y2="350" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="816" y="350" width="170" height="112" rx="14" fill="#FFFFFF" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="901.0" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1E2A50">Anthropic Claude</text>
+<text x="901.0" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Written findings and plans</text>
+<text x="901.0" y="425" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">API key, credits</text>
+<line x1="720" y1="230" x2="901" y2="350" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1010" y="350" width="170" height="112" rx="14" fill="#FFFFFF" stroke="#1E2A50" stroke-width="2.5"/>
+<text x="1095.0" y="380" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1E2A50">Email (SMTP)</text>
+<text x="1095.0" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Reset emails, contact form</text>
+<text x="1095.0" y="425" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">support@growbie.in</text>
+<line x1="720" y1="230" x2="1095" y2="350" stroke="#1E2A50" stroke-width="2" marker-end="url(#ah)"/>
+<text x="40" y="486" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#55675A">Outside services the backend calls</text>
+<text x="40" y="508" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">Every AI answer has to quote the evidence it used. If a quote cannot be found in the measured data, that item is removed before the user sees it.</text>
+<rect x="40" y="580" width="1140" height="140" rx="14" fill="#FFFFFF" stroke="#76B82A" stroke-width="2.5"/>
+<text x="610.0" y="610" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E2A50">How one analysis works</text>
+<text x="610.0" y="636" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">1. The owner gives their details: website, channel, goal.</text>
+<text x="610.0" y="655" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">2. We measure: crawl the pages, run PageSpeed, read YouTube, check GoDaddy and the GEO signals.</text>
+<text x="610.0" y="674" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">3. Claude writes the findings and plan from those measurements only, and each item cites its evidence.</text>
+<text x="610.0" y="693" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#44564A">4. The result is saved as its own record. Nothing is overwritten, so history and comparisons work.</text></svg>

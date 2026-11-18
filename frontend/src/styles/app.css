@@ -339,3 +339,30 @@ details.eg .kv { margin-top: 12px; }
 #root { min-height: 100vh; display: flex; flex-direction: column; }
 #root > main { flex: 1 0 auto; }
 .site-footer { margin-top: 56px; flex: none; }
+
+/* Guided tour */
+.tour { position: fixed; right: 22px; bottom: 22px; width: min(390px, calc(100vw - 32px)); background: var(--ink); color: var(--paper); border-radius: 16px; padding: 18px 20px 16px; z-index: 70; box-shadow: 0 12px 40px rgba(23, 38, 28, 0.35); outline: none; }
+.tour-count { font: 700 11.5px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--lime); }
+.tour-title { font: 800 21px/1.2 var(--sans); letter-spacing: -0.02em; margin: 8px 0 6px; }
+.tour-body { font-size: 15px; line-height: 1.5; color: #D5E3D6; }
+.tour-dots { display: flex; gap: 6px; margin: 14px 0 12px; }
+.tour-dots i { width: 8px; height: 8px; border-radius: 50%; background: #3F5A48; }
+.tour-dots i.on { background: var(--lime); }
+.tour-actions { display: flex; gap: 8px; align-items: center; }
+.tour .btn-quiet:hover { background: #2E4A38; }
+.appnav a.tour-hl { outline: 3px solid var(--lime); outline-offset: 2px; background: var(--ink); color: var(--lime); }
+@media (max-width: 560px) { .tour { right: 16px; left: 16px; bottom: 16px; width: auto; } }
+
+/* Guide page */
+.guide-step { display: grid; grid-template-columns: 1fr; gap: 18px; margin-top: 56px; }
+.guide-step h2 { font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.03em; }
+.guide-step .n { font: 400 italic 52px/0.9 var(--serif); color: var(--forest); margin-right: 14px; }
+.guide-shot { width: 100%; height: auto; border: 1.5px solid var(--ink); border-radius: var(--r); box-shadow: 5px 5px 0 var(--ink); background: var(--white); display: block; }
+.guide-cap { font-size: 13px; color: var(--ink-3); margin-top: 8px; }
+.guide-steps-list { display: grid; gap: 6px; margin-top: 4px; }
+.guide-steps-list li { padding-left: 22px; position: relative; font-size: 16px; }
+.guide-steps-list li::before { content: ""; position: absolute; left: 0; top: .6em; width: 9px; height: 9px; border-radius: 50%; background: var(--ink); }
+.guide-toc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.guide-toc a { text-decoration: none; }
+.faq dt { font-weight: 800; margin-top: 18px; } .faq dd { color: var(--ink-2); margin-top: 4px; max-width: 70ch; }
+.shell-rail .chip-profile { max-width: 150px; }

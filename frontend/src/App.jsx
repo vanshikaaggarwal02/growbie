@@ -4,6 +4,7 @@ import ProfileShell from './components/ProfileShell.jsx'
 import { useAuth } from './lib/auth.jsx'
 import SignIn from './pages/SignIn.jsx'
 import Contact from './pages/Contact.jsx'
+import Guide from './pages/Guide.jsx'
 import ForgotPassword from './pages/ForgotPassword.jsx'
 import ResetPassword from './pages/ResetPassword.jsx'
 import Start from './pages/Start.jsx'
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/guide" element={<Guide />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route element={<Private />}>
