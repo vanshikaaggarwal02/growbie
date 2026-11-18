@@ -70,8 +70,8 @@ The first build takes a few minutes. Then open `https://growbie.in`. The certifi
 Check on it:
 
 ```bash
-docker compose -f docker-compose.prod.yml ps
-docker compose -f docker-compose.prod.yml logs -f backend
+sudo docker compose -p growbie -f docker-compose.prod.yml --env-file .env.prod ps
+sudo docker compose -p growbie -f docker-compose.prod.yml --env-file .env.prod logs -f backend
 ```
 
 ## 6. Back up the database
