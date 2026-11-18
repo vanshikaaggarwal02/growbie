@@ -323,12 +323,12 @@ public class WebsiteAuditService {
             try {
                 output = findings(profileId, evidence);
             } catch (ApiException e) {
-                warnings.add("The written findings are unavailable right now (" + e.getMessage()
-                        + ") The crawl, PageSpeed results and readiness checks are still accurate.");
+                log.warn("website audit findings unavailable auditId={} code={}", auditId, e.getCode());
+                warnings.add("Written website findings could not be generated. The crawl and measured results are still available.");
             }
             if (output != null && output.dropped() > 0) {
-                warnings.add(output.dropped() + " finding(s) were removed because their evidence could not be "
-                        + "verified against the audited pages.");
+                warnings.add(output.dropped() + " finding(s) were omitted because their quoted evidence did not "
+                        + "meet the audit's validation requirements.");
             }
 
             java.util.Map<String, Object> domainSection = domainSection(owner, profileId, uri, crawl, warnings);

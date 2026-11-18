@@ -33,6 +33,7 @@ final class AuditOutputParser {
     private static final Set<String> SEVERITIES = Set.of("HIGH", "MEDIUM", "LOW");
     private static final Set<String> BASES = Set.of("OBSERVED", "INFERENCE");
     private static final int MIN_EVIDENCE = 4;
+    private static final int MAX_EVIDENCE = 300;
 
     private AuditOutputParser() {}
 
@@ -57,14 +58,18 @@ final class AuditOutputParser {
                     AiJson.oneOf(f, "severity", SEVERITIES),
                     AiJson.str(f, "pageUrl", 1, 2048),
                     AiJson.str(f, "title", 1, 120),
-                    AiJson.str(f, "evidence", MIN_EVIDENCE, 300),
+                    // Parse a bounded oversized quote so lenient retry can omit just this finding,
+                    // instead of failing the entire audit for a single length violation.
+                    AiJson.str(f, "evidence", MIN_EVIDENCE, 1000),
                     AiJson.str(f, "impact", 1, 400),
                     AiJson.str(f, "recommendation", 1, 500),
                     AiJson.str(f, "suggestedCopy", 0, 400),
                     AiJson.oneOf(f, "basis", BASES));
 
             String problem = null;
-            if (!pageUrls.contains(finding.pageUrl())) {
+            if (finding.evidence().length() > MAX_EVIDENCE) {
+                problem = "its evidence is longer than " + MAX_EVIDENCE + " characters";
+            } else if (!pageUrls.contains(finding.pageUrl())) {
                 problem = "its pageUrl '" + finding.pageUrl() + "' is not one of the audited pages";
             } else if (!haystack.contains(normalise(finding.evidence()))) {
                 problem = "its evidence is not copied exactly from one line of the EVIDENCE";

@@ -124,9 +124,13 @@ export function AuditReport({ id, auditId }) {
   const passed = assessed.filter((c) => c.passed).length
   const high = a.findings.filter((f) => f.severity === 'HIGH')
   const rest = a.findings.filter((f) => f.severity !== 'HIGH')
+  const findingsUnavailable = !a.summary
   const others = (history.data || []).filter((x) => x.auditId !== a.auditId && (x.status === 'COMPLETED' || x.status === 'PARTIAL'))
   const previous = others.filter((x) => new Date(x.createdAt) < new Date(a.createdAt))[0]
-  const notes = (a.warnings || []).filter((w) => !/page\(s\) were skipped because robots\.txt/.test(w))
+  const notes = (a.warnings || []).filter((w) =>
+    !/page\(s\) were skipped because robots\.txt/.test(w)
+    && !/^The written findings are unavailable right now\b/.test(w)
+    && !/^Written website findings could not be generated\b/.test(w))
   const head = splitSummary(a.summary || '')
 
   return (
@@ -135,22 +139,24 @@ export function AuditReport({ id, auditId }) {
         <span className="chip chip-soft">Website audit</span><span className="chip chip-soft">{a.websiteUrl}</span>
         <span className="chip chip-soft">{when(a.createdAt)}</span>
         <span className="chip chip-soft">{a.pages.length} page{a.pages.length === 1 ? '' : 's'} read</span>
-        <span className="chip chip-dark">{a.status === 'PARTIAL' ? 'Findings unavailable' : 'Complete'}</span>
+        <span className="chip chip-dark">{a.status === 'PARTIAL' ? (findingsUnavailable ? 'Written findings unavailable' : 'Partial') : 'Complete'}</span>
       </div>
       <h1 className="display" style={{ fontSize: 'clamp(30px,4vw,50px)', maxWidth: '24ch', margin: '0 0 18px' }}>{head.head || 'Audit results'}</h1>
       {head.rest && <p className="lead" style={{ maxWidth: '70ch', margin: '0 0 8px' }}>{head.rest}</p>}
-      <p className="small" style={{ margin: '8px 0 0' }}><AiTag /> The summary, findings and suggested wording are written by AI from the evidence quoted below. The checks, PageSpeed and domain facts are measured.</p>
+      {findingsUnavailable
+        ? <p className="small muted" style={{ margin: '8px 0 0' }}>The written website findings are unavailable for this audit. The checks, PageSpeed and domain facts are measured.</p>
+        : <p className="small" style={{ margin: '8px 0 0' }}><AiTag /> The summary, findings and suggested wording are written by AI from the evidence quoted below. The checks, PageSpeed and domain facts are measured.</p>}
       <div className="row" style={{ margin: '12px 0 4px', gap: 10 }}>
         <Link className="btn btn-sm" to={`/app/profiles/${id}/audits`}>All audits</Link>
         {previous && <Link className="btn btn-sm btn-primary" to={`/app/profiles/${id}/audits/compare?from=${previous.auditId}&to=${a.auditId}`}>Compare with the previous audit ({fmtDate(previous.createdAt)})</Link>}
       </div>
-      {a.status === 'PARTIAL' && <div className="callout" style={{ marginTop: 16 }}>The written findings could not be produced this time, so only the measured checks and PageSpeed results are shown. Run the audit again to get findings.</div>}
+      {findingsUnavailable && <div className="callout" style={{ marginTop: 16 }}>We couldn’t produce written website findings for this audit. Your crawl, measured checks, and any available PageSpeed results are still shown. Try running the audit again later.</div>}
       {notes.length > 0 && <div className="callout" style={{ marginTop: 16 }}>{notes.map((w, i) => <p key={i}>{w}</p>)}</div>}
 
       <div className="grid g-8-4" style={{ gap: 48, alignItems: 'start', marginTop: 28 }}>
         <section className="stack" aria-labelledby="f-h">
-          <div className="row spread"><h2 id="f-h" className="h3">{a.findings.length} finding{a.findings.length === 1 ? '' : 's'}, most important first</h2>
-            <span className="small muted">Every quote is copied from your page. Findings we can't verify are removed. "High" is the most serious level.</span></div>
+          <div className="row spread"><h2 id="f-h" className="h3">{findingsUnavailable ? 'Written findings unavailable' : `${a.findings.length} finding${a.findings.length === 1 ? '' : 's'}, most important first`}</h2>
+            {!findingsUnavailable && <span className="small muted">Every quote is copied from your page. Findings we can't verify are removed. "High" is the most serious level.</span>}</div>
           {high.map((f) => <Finding key={f.id} f={f} />)}
           {rest.map((f) => (
             <details key={f.id} className="compact" style={{ '--bar': barColour[f.severity] }}>
