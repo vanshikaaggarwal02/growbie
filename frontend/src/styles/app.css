@@ -366,3 +366,9 @@ details.eg .kv { margin-top: 12px; }
 .guide-toc a { text-decoration: none; }
 .faq dt { font-weight: 800; margin-top: 18px; } .faq dd { color: var(--ink-2); margin-top: 4px; max-width: 70ch; }
 .shell-rail .chip-profile { max-width: 150px; }
+
+/* Footer links: say what each one does */
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; color: var(--ink-2); }
+.footer-links a { color: var(--ink); font-weight: 700; }
+.footer-links .footer-cta { background: var(--lime); border: 1.5px solid var(--ink); border-radius: 999px; padding: 7px 14px; text-decoration: none; }
+.footer-links .footer-cta:hover { background: #B8E24F; }

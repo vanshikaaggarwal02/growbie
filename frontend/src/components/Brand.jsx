@@ -29,7 +29,11 @@ export function Footer() {
   return (
     <footer className="site-footer"><div className="wrap">
       <div><Brand to="/" /><p className="tagline-sm">{TAGLINE}</p></div>
-      <p className="small"><Link to="/guide">Guide</Link> · <Link to="/contact">Contact us</Link> · <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a><br />growbie.in</p>
+      <div className="footer-links small">
+        <Link to="/guide">How to use Growbie</Link>
+        <Link to="/contact" className="footer-cta">Send us a message →</Link>
+        <span>Or email <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a></span>
+      </div>
     </div></footer>
   )
 }
