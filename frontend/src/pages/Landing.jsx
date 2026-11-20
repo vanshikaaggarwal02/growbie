@@ -38,7 +38,7 @@ export default function Landing() {
       <p className="eyebrow">The loop</p>
       <h2 className="h2" style={{ margin: '12px 0 34px', maxWidth: '20ch' }}>Diagnose, recommend, execute, <em>measure.</em></h2>
       <div className="loop-grid">
-        <div><div className="big">1</div><h3>Diagnose</h3><p>Reads up to 10 pages of your site, checks your domain and AI-search readiness, and looks at your YouTube channel if you have one.</p><p className="proof">14 readiness checks · Google PageSpeed · YouTube public data</p></div>
+        <div><div className="big">1</div><h3>Diagnose</h3><p>Reads up to 10 pages of your site, checks your domain and AI-search readiness, and looks at your social media presence, starting with YouTube.</p><p className="proof">14 readiness checks · Google PageSpeed · YouTube public data</p></div>
         <div><div className="big">2</div><h3>Recommend</h3><p>Ranks the changes by impact and effort. Every item points at the line of evidence it rests on.</p><p className="proof">Priority comes from a fixed rule, not a hidden score</p></div>
         <div><div className="big">3</div><h3>Execute</h3><p>Drafts titles, page copy, hooks and scripts from your own facts. You pick a version. You publish it.</p><p className="proof">Never publishes, buys or edits anything for you</p></div>
         <div><div className="big">4</div><h3>Measure</h3><p>Run it again and see what is fixed, what is still there, and what is new. No claim that a change caused a result.</p><p className="proof">Checks that pass or fail, not predictions</p></div>
