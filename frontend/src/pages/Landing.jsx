@@ -9,7 +9,7 @@ export default function Landing() {
       <div>
         <p className="tagline">You've got the business. We've got your back.</p>
         <h1 className="display">Find what to fix first, <em>with proof.</em></h1>
-        <p className="lead">Growbie checks your website, how ready it is for AI search, and your YouTube channel if you have one. It quotes the evidence, ranks what to do next and drafts the wording. You approve every word. Nothing is published for you.</p>
+        <p className="lead">Growbie checks your website, how ready it is for AI search, and your social media presence, starting with YouTube. It quotes the evidence, ranks what to do next and drafts the wording. You approve every word. Nothing is published for you.</p>
         <div className="row" style={{ marginTop: '30px', gap: '16px' }}>
           <Link className="btn btn-primary" to="/signin">Start a diagnosis</Link>
           <a className="btn btn-quiet" href="#loop">How it works</a>

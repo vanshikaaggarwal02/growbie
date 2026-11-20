@@ -31,7 +31,7 @@ export default function Guide() {
       <div className="wrap" style={{ maxWidth: 980 }}>
         <p className="eyebrow">Guide</p>
         <h1 className="display" style={{ fontSize: 'clamp(36px,5vw,60px)', margin: '14px 0 12px' }}>A quick tour of <em>Growbie.</em></h1>
-        <p className="lead" style={{ maxWidth: '62ch' }}>Growbie checks your website, how ready it is for AI search, and your YouTube channel if you have one. Then it tells you what to fix first. This guide walks through each page in the order you'll meet them. The screenshots use a public example business, not real customer data.</p>
+        <p className="lead" style={{ maxWidth: '62ch' }}>Growbie checks your website, how ready it is for AI search, and your social media presence, starting with YouTube. Then it tells you what to fix first. This guide walks through each page in the order you'll meet them. The screenshots use a public example business, not real customer data.</p>
         <div className="row" style={{ marginTop: 22, gap: 12 }}>
           <Link className="btn btn-primary" to={start}>{user ? 'Add a business' : 'Create an account'}</Link>
           <a className="btn btn-quiet" href="#labels">How to read the labels</a>

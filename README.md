@@ -2,7 +2,7 @@
 
 **You've got the business. We've got your back.**
 
-Growbie is a plain-language advisor for small businesses. Tell it about your business, and it checks your website, how well AI search tools can understand you, and your YouTube channel if you have one. Then it tells you what to fix first, shows you the evidence, and drafts the new wording for you to approve.
+Growbie is a plain-language advisor for small businesses. Tell it about your business, and it checks your website, how well AI search tools can understand you, and your social media presence, starting with YouTube. Then it tells you what to fix first, shows you the evidence, and drafts the new wording for you to approve.
 
 It is built for two kinds of people:
 
